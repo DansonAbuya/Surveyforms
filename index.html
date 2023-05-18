@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tujuane Michezoni</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            background-image: url(SurveypageBack.jpg);
+            
+        }
+        
+        header {
+            background-color: #2387b1;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        form {
+            max-width: 1000px;
+            height: auto;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin: 0 10px;
+        }
+        
+        nav a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        textarea{
+            width: 700px;
+            height: 100px;
+            border-color: aqua;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Survey On SPorts</h1>
+
+    </header>
+    <h2 align="center">Home Page</h2>
+
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <form action="submit_form.php" method="POST">
+        <h2>Survey Questions</h2>
+        
+        <label for="name"><h3>Name:</h3></label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="country"><h3>County Of Birth:</h3></label>
+        <select id="county" name="county">
+            <option value="none" selected>None</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Bungoma">Bungoma</option>
+            <option value="Wajir">Wajir</option>
+            <option value="Machakos">Machakos</option>
+        </select>
+
+        <label for="age"><h3>Age:</h3></label>
+        <input type="text" id="age" name="age">
+        
+        
+        <label for="sportsCategory"><h3>Your Sports Level of Choice:</h3></label>
+        <label for="local">Local Sports</label>
+        <input type="radio" id="local" name="sports" value="local" required>
+        <label for="female">International Sports</label>
+        <input type="radio" id="international" name="sports" value="international" required>
+        
+        
+        
+        <label for="gender"><h3>Choose Your Gender:</h3></label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        
+        
+        <label for="sportsCategory"><h3>Chose the Category of Sports you know and watch:</h3></label>
+        <label for="football">Football</label>
+        <input type="checkbox" id="football" name="interests" value="football">
+        <label for="tenis">Tenis</label>
+        <input type="checkbox" id="tenis" name="interests" value="Tenis">
+        <label for="music">Golf</label>
+        <input type="checkbox" id="Golf" name="interests" value="Golf">
+        <label for="athletics">Athletics</label>
+        <input type="checkbox" id="athletics" name="interests" value="athlet">
+        
+        
+
+        <label for="sportsCategory"><h3>Which of these leagues to you know and watch:</h3></label>
+        <label for="epl">English Premier League</label>
+        <input type="checkbox" id="epl" name="interests" value="epl">
+        <label for="bundesliga">Bundesliga</label>
+        <input type="checkbox" id="germany" name="interests" value="germany">
+        <label for="seriA">SeriA</label>
+        <input type="checkbox" id="seria" name="interests" value="seria">
+        <label for="fkf">Football Kenya Federation League</label>
+        <input type="checkbox" id="fkf" name="interests" value="fkf">
+
+        <label for="comment"><h3>Kindly describe any improvements you'll like to see in our sports:</h3></label>
+        <textarea id="comment" name="comm" ></textarea>
+        <br>
+
+
+        
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
